@@ -314,9 +314,10 @@
     <nav id="navMenu"> 
         <a class="navsHref" href="#coreTeam">About us</a>
         <a class="navsHref" href="#Materials">Materials</a>
-        <a class="navsHref" onclick=" toggleTeam()">Register for KOPs</a>
-        <a class="navsHref" href="#blog" onclick=" toggleTeam()">Blog</a>
-       <a class="navsHref" id="navsHrefBut" href="#home1">Home</a>
+        <a class="navsHref" onclick="Swal.fire({title: 'Coming soon!', text: 'Powered by NAMSSN!', icon: 'info', iconColor: '#14532d', confirmButtonColor: '#14532d'})">Register for KOPs</a>
+        <a class="navsHref" href="#blog" onclick="Swal.fire({title: 'Coming soon!', text: 'Powered by NAMSSN!', icon: 'info', iconColor: '#14532d', confirmButtonColor: '#14532d'})">Blog</a>
+       <a class="navsHref" href="#faq">FAQs</a>
+        <a class="navsHref" id="navsHrefBut" href="#home1">Home</a>
     </nav>
 </header>
 
@@ -412,8 +413,8 @@
         <div class="bg-gray-300 grow w-62 rounded-2xl p-3 flex flex-col">
             <img src="phelim3.jpg" alt="president NAMSSN" class="rounded-2xl object-cover h-95 w-full">
             <div class="bg-white rounded-2xl mt-2 p-2 grow text-start">
-                <b class="text-xl">Phelim Agbontain</b><br><i>President(NAMSSN 2025/2026)</i><br><br>
-                <p class="text-justify">Provides leadership and strategic direction for the National Association of Mathematical Science Students of Nigeria (NAMSSN) uniUyo, with commitment to unity, innovation, and student success.</p>
+                <b class="text-xl">Phelim Agbontain</b><br><i>President-NAMSSN 2025/2026</i><br><br>
+                <p class="text-justify">Provides leadership and strategic direction for NAMSSN uniUyo, with commitment to unity, innovation, and student success.</p>
             </div>
         </div>
 
@@ -421,7 +422,7 @@
         <div class="bg-gray-300 grow w-62 rounded-2xl p-3 flex flex-col">
             <img src="abas11.jpeg" alt="Director of academics Namssn" class="rounded-2xl object-cover h-95 w-full">
             <div class="bg-white rounded-2xl mt-2 p-2 grow text-start">
-                <b class="text-xl">Abasienem Ukwo</b><br><i>Director of Academics (NAMSSN 2025/2026)</i><br><br>
+                <b class="text-xl">Abasienem Ukwo</b><br><i>Director of Academics-NAMSSN 2025/2026</i><br><br>
                 <p class="text-justify">Oversees academic programs and initiatives while bridging the gap between academic needs and modern technology.
   </p>
             </div>
@@ -455,27 +456,27 @@
 
     <!-- Card 2 -->
     <div class="bg-gray-300 grow w-72 rounded-2xl p-2 flex flex-col">
-        <img src="techTeam/christianacrop.jpeg" alt="Archivist" class="rounded-2xl object-cover h-95 w-full">
+        <img src="techTeam/christianacrop.jpeg" alt="Content Archivist" class="rounded-2xl object-cover h-95 w-full">
         <div class="bg-white rounded-2xl mt-2 p-2 grow text-start">
-            <b class="text-xl">Christiana Udo</b><br><i>Archivist</i><br><br>
+            <b class="text-xl">Christiana Udoh</b><br><i>Content Archivist</i><br><br>
             <p class="text-justify">Manages the organization and storage of all materials. Ensures content is easily accessible for integration into the platform.</p>
         </div>
     </div>
 
     <!-- Card 3 -->
     <div class="bg-gray-300 grow w-72 rounded-2xl p-2 flex flex-col">
-        <img src="techTeam/tech200l.jpeg" alt="Curator" class="rounded-2xl object-cover h-95 w-full">
+        <img src="techTeam/tech200l.jpeg" alt="Content Curator" class="rounded-2xl object-cover h-95 w-full">
         <div class="bg-white rounded-2xl mt-2 p-2 grow text-start">
-            <b class="text-xl">Favour silas</b><br><i>Curator</i><br><br>
+            <b class="text-xl">Favour Silas</b><br><i>Content Curator</i><br><br>
             <p class="text-justify">Focuses on sourcing and selecting relevant academic materials. Evaluates content and ensures only high-quality resources are considered for use.</p>
         </div>
     </div>
 
     <!-- Card 4 -->
     <div class="bg-gray-300 grow w-72 rounded-2xl p-2 flex flex-col">
-        <img src="techTeam\darios1.jpeg" alt="Curator" class="rounded-2xl object-cover h-95 w-full">
+        <img src="techTeam\darios1.jpeg" alt="Content Curator" class="rounded-2xl object-cover h-95 w-full">
         <div class="bg-white rounded-2xl mt-2 p-2 grow text-start">
-            <b class="text-xl">Daniel John</b><br><i>Curator</i><br><br>
+            <b class="text-xl">Daniel John</b><br><i>Content Curator</i><br><br>
             <p class="text-justify">Focuses on sourcing and selecting relevant academic materials. Evaluates content and ensures only high-quality resources are considered for use.</p>
         </div>
     </div>
@@ -499,14 +500,14 @@
 
 
 <!--Frequently asked questions-->
-<div class="block my-15 px-8 bg-gray-300 mx-3 p-2 rounded-xl">
+<div id="faq" class="block my-15 px-8 bg-gray-300 mx-3 p-2 rounded-xl">
     <h2 style="font-size: 30px;">Frequently asked questions</h2>
     <p class="text-2xl">We are often asked...</p>
 
-<!-- Student Support -->
+<!-- faq1 -->
 <div class="mb-4">
   <div class="flex  items-center px-1  text-[20px] w-full my-3 py-2 bg-gray-200 rounded-xl expandable-item">
-    <span class="flex-1 text-center">How do I pay my departmental dues?</span>
+    <span class="flex-1 text-start">How do I pay my departmental dues?</span>
     <button class="flex items-center justify-center w-8 h-8 bg-white rounded-full text-blue-400 font-bold text-lg hover:bg-gray-100 expand-btn">+</button>
   </div>
   <div class="expandable-content px-1 text-left text-lg">
@@ -514,21 +515,21 @@
   </div>
 </div>
 
-  <!-- Academic Excellence -->
+  <!-- faq2 -->
   <div class="mb-4">
     <div class="flex  items-center px-1 text-[20px] w-full my-3 py-2 bg-gray-200 rounded-xl expandable-item">
-      <span class="flex-1 text-center">What are the different career paths available to math majors?</span>
+      <span class="flex-1 text-start">What are the different career paths available to math majors?</span>
       <button class="flex items-center justify-center w-8 h-8 bg-white rounded-full text-blue-400 font-bold text-lg hover:bg-gray-100 expand-btn">+</button>
     </div>
-    <div class="expandable-content px-4 text-center text-sm">
+    <div class="expandable-content px-4 text-start text-sm">
       <p class="firstParagraphs">Math majors can pursue knowledge-based paths, such as academia, theoretical physics, or cryptology. Alternatively, they can follow skills-based paths that apply mathematical tools to industry challenges, including data science, actuarial science, quantitative finance, and operations research, where the emphasis is on leveraging software and statistical techniques to solve practical problems.</p>
     </div>
   </div>
 
-  <!-- Research & Development -->
+  <!-- faq3 -->
   <div class="mb-4">
     <div class="flex items-center px-4 text-[20px] w-full my-3 py-2 bg-gray-200 rounded-xl expandable-item">
-      <span class="flex-1 text-center">How can I run for a position in NAMSSN?</span>
+      <span class="flex-1 text-start">How can I run for a position in NAMSSN?</span>
       <button class="flex items-center justify-center w-8 h-8 bg-white rounded-full text-blue-400 font-bold text-lg hover:bg-gray-100 expand-btn">+</button>
     </div>
     <div class="expandable-content px-6 text-left text-lg">
@@ -537,10 +538,10 @@
   </div>
 
 
-  <!-- Community Engagement -->
+<!--faq4-->
   <div class="mb-4">
     <div class="flex items-center px-4 text-[20px] w-full my-3 py-2 bg-gray-200 rounded-xl expandable-item">
-      <span class="flex-1 text-center">How can I submit a complaint or suggestion regarding the current curriculum or department policies?</span>
+      <span class="flex-1 text-start">How can I submit a complaint or suggestion regarding the current curriculum or department policies?</span>
       <button class="flex items-center justify-center w-8 h-8 bg-white rounded-full text-blue-400 font-bold text-lg hover:bg-gray-100 expand-btn">+</button>
     </div>
     <div class="expandable-content px-6 text-left text-lg">
@@ -548,9 +549,11 @@
     </div>
   </div>
 
+
+  <!--faq5-->
   <div class="mb">
   <div class="flex  items-center px-4  text-[20px] w-full my-3 py-2 bg-gray-200 rounded-xl expandable-item">
-    <span class="flex-1 text-center">What are the course requirements to gain admission into Mathematics?</span>
+    <span class="flex-1 text-start">What are the course requirements to gain admission into Mathematics?</span>
     <button class="flex items-center justify-center w-8 h-8 bg-white rounded-full text-blue-400 font-bold text-lg hover:bg-gray-100 expand-btn">+</button>
   </div>
     <div class="expandable-content px-6 text-left text-lg">
@@ -566,10 +569,12 @@
     </div>
   </div>
 
-  <div class="mb" id="Materials">
+
+  <!--faq6-->
+  <div class="mb">
   <div class="flex  items-center px-4  text-[20px] w-full my-3 py-2 bg-gray-200 rounded-2xl expandable-item">
-    <span class="flex-1 text-center">Where can I find past exam papers or study guides?</span>
-    <button class="flex items-center justify-center w-8 h-8 bg-white rounded-full text-blue-400 font-bold text-lg hover:bg-gray-100 expand-btn">+</button>
+    <span class="flex-1 text-start">Where can I find past exam papers or study guides?</span>
+    <button id="Materials" class="flex items-center justify-center w-8 h-8 bg-white rounded-full text-blue-400 font-bold text-lg hover:bg-gray-100 expand-btn">+</button>
   </div>
     <div class="expandable-content px-6 text-left text-lg">
       <p class="firstParagraphs">
@@ -577,15 +582,19 @@
     </div>
   </div>
 
-  <!--<div class="mb">
+
+  <!--faq7-->
+  <div class="mb">
   <div class="flex  items-center px-4  text-[20px] w-full my-3 py-2 bg-gray-200 rounded-2xl expandable-item">
-    <span class="flex-1 text-center">Student Support</span>
-    <button class="flex items-center justify-center w-8 h-8 bg-white rounded-full text-blue-400 font-bold text-lg hover:bg-gray-100 expand-btn">+</button>
+    <span class="flex-1 text-start">What is the full meaning of NAMSSN?</span>
+    <button id="Materials" class="flex items-center justify-center w-8 h-8 bg-white rounded-full text-blue-400 font-bold text-lg hover:bg-gray-100 expand-btn">+</button>
   </div>
     <div class="expandable-content px-6 text-left text-lg">
-      <p id="Materials" class="firstParagraphs">We are dedicated to supporting our students through mentoring, tutoring programs, and creating an inclusive environment where every student can thrive.</p>
+      <p class="firstParagraphs">
+      NAMSSN stands for the National Association of Mathematical science Students of Nigeria.
+      </p>
     </div>
-  </div>-->
+  </div>
 </div>
 
 <!--Our packages for students-->
@@ -657,11 +666,11 @@
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="materials/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="materials/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="materials/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="materials/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                      </ul>
              
@@ -780,31 +789,31 @@
                      <ul class="space-y-3 overflow-y-auto flex-grow pr-2 custom-scrollbar">
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="path/to/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">CHM 211</span>
-                         <a href="path/to/chm211.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">GST 221</span>
-                         <a href="path/to/gst221.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="path/to/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="path/to/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="path/to/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="path/to/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                      </ul>
              
@@ -850,31 +859,31 @@
                      <ul class="space-y-3 overflow-y-auto flex-grow pr-2 custom-scrollbar">
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="path/to/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">CHM 211</span>
-                         <a href="path/to/chm211.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">GST 221</span>
-                         <a href="path/to/gst221.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="path/to/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="path/to/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="path/to/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
                          <span class="text-sm font-medium">MTH 201</span>
-                         <a href="path/to/mth201.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
+                         <a href="path/to/mth000.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                      </ul>
              
