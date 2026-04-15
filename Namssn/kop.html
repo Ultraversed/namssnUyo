@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" type="text/css" href="kop.css">
+  <title>Equation of champions</title>
+</head>
+<body>
+  <header id="header">
+    
+    <div class="headerDiv">
+      
+      <img src="images.jpeg" alt="UNIUYO logo" class="img1">
+    <img src="namssn.png" alt="NAMSSN logo" class="img1">
+ <h1 class="h1">National Association of Mathematical Sciences Students Of Nigeria(NAMSSN)</h1> 
+ </div>
+  </header> 
+
+  <main>
+    <!--<div class="firstSsectDiv">
+           <hr>  -->
+
+    <div class="mainDiv1">
+      
+      
+
+    <img src="kopflier.jpeg" alt="Equation of champions!" class="img2">
+    <div class="writeup1">
+             <span class="span1"><b>Who is the King of permsite?</b><br>
+                  <span class="span2"> The wait is over! 
+                    The Equation of champions 1.0 2025/2026 is here, where only one team takes the crown!
+                  Think your department has what it takes?
+                      Now’s your chance to prove it on the pitch, bring the skill, the teamwork, and the energy that makes your department unstoppable!
+      </span>
+                    </span>
+          </div>             
+              
+        
+    </div>
+
+      <div class="event-info">
+       <div class="event"> 
+       <p> <span class="span1"> Event Info<br></span>
+
+Registration is in progress and Closes: 23rd January 2026
+
+    <br><b>Kick-off:</b>26th January 2026<br>
+
+    <b>Venue:</b> convocation arena, permsite<br>
+    <b>Entry Fee:</b> ₦7,000 per team<br>
+    <b>Prizes:</b> Trophies, medals, and cash prizes for top team!
+    </p>
+</div>
+          <div class="event">
+            <p><span class="span1"> How to Join<br></span>
+    
+    Register your team now, include your department and faculty name, and captain’s contact.
+  </p>
+
+          <p>fill in the form below and hit the pay button today!
+          After the payment is successful you will receive a confirmation gmail.
+          Further information will be communicated through the phone number you will provide!</p>
+          <p>Let’s find out which department rules permsite.
+          Only verified students can play. 
+          </p>   
+          </div>
+      </div>
+
+      
+    
+  </h6>
+
+<form id="paymentForm">
+  <h3>Make a Payment</h3>
+  
+  <!--<label for="name">Payer name:</label><br>-->
+  <input type="text" placeholder="Payer's name" id="name" class="input1" required><br>
+  
+  
+  <!--<label for="dept">Department:</label><br>-->
+  <input type="text" placeholder="Participating department" id="dept" class="input1" required><br>
+
+<input type="number" placeholder="Phone number" id="phone" class="input1" required><br>
+  
+  
+ <!-- <label for="facultyName">Faculty:</label><br>-->
+  <input type="text" placeholder="Faculty" id="facultyName" class="input1" required><br>
+  
+  
+  
+<!-- <label for="facultyName">Faculty:</label><br>-->
+    <input type="email" placeholder="Email" id="email" class="input1" required><br>
+
+  <button class="greenButton" type="submit">Pay Now</button>
+</form>
+</div>
+</main> 
+  <hr>
+
+  <!--footer section-->
+  <footer>
+    <h3>Having issues with payment? <a href="mailto: uniuyonamssn@gmail.com">Contact us</a></h3>
+   <div class="sponsors" style="text-align: center;"> Sponsors:<br><img src="namssn.png" alt="Department of Mathematics uniuyo" class="img3">
+      <img src="UltralimitGroupLogo.jpeg" alt="Ultralimit Group" class="img3">
+   </div>
+  </footer>
+  </body>
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+  <script>
+  const paymentForm = document.getElementById('paymentForm');
+  paymentForm.addEventListener("submit", payWithPaystack, false);
+
+  function payWithPaystack(e) {
+    e.preventDefault();
+
+    let handler = PaystackPop.setup({
+    key:'pk_live_1f00a37a0ceb33673a69cb9f78e63d7ebedd8223', // your Paystack public key
+      email: document.getElementById("email").value,
+      amount: '700000', // convert to kobo
+      split_code: 'SPL_TSsrlCkKaP', 
+      currency: 'NGN',
+      firstname: document.getElementById("name").value,
+      metadata: {
+        custom_fields: [
+          {
+            display_name: "Customer Name",
+            variable_name: "customer_name",
+            value: document.getElementById("name").value
+          },
+        {
+            display_name: "Department",
+            variable_name: "department",
+            value: document.getElementById("dept").value
+        },
+        {
+        display_name: "Phone number",
+            variable_name: "phone_number",
+            value: document.getElementById("phone").value
+          },
+        {
+            display_name: "Faculty",
+            variable_name: "faculty",
+            value: document.getElementById("facultyName").value
+          }
+        ]
+      },
+      callback: function(response) {
+        alert('Payment successful! Reference: ' + response.reference);
+        // Optional: redirect to success page
+        window.location.href = "https://chat.whatsapp.com/GC6KQ5WfWQ346dg9ddpPnl?mode=hqrt3";
+      },
+      onClose: function() {
+        alert('Payment window closed.');
+      }
+    });
+    handler.openIframe();
+  }
+  
+</script>
+</html>

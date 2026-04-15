@@ -1,0 +1,334 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* 1. Reset default margins to prevent gaps at the top */
+body { margin: 0; 
+max-width: 100%;}
+
+/* 2. Style the header as the main container */
+.main-header {
+    position: fixed;   /* Sticks to the viewport */
+    right:0;
+    top: 0;
+    left:0;
+    display: flex;     /* Aligns children side-by-side */
+    justify-content: space-between; /* Logo left, Nav right */
+    align-items: center;
+    background-color: rgb(152, 174, 159, 0.3); /* Add background so content doesn't bleed through */
+    margin: 20px !important;
+    border-radius: 9999px;
+    padding: 10px 20px !important;
+    z-index: 1000;     /* Keeps it above the h1 */
+    box-sizing: border-box;   
+    backdrop-filter: blur(10px);
+    height: auto !important;
+}
+
+/* 3. Clean up the logo container (remove position:fixed) */
+.imgHeadDiv {
+    border-radius: 9999px;
+    background-color: black;
+    padding: 5px 15px;
+    display: flex;
+}
+
+/* 4. Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navsHref {
+    margin: 0 15px; /* Better horizontal spacing */
+    text-decoration: none;
+    color: black;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#navsHrefBut {
+    border-radius: 9999px;
+    background-color: black;
+    width: 110px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+#imgUniuyo {
+    border-radius: 9999px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger span {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.5s ease;
+    border-radius: 3px;
+}
+.closeIcon {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: 0.5s ease;
+
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-header {
+        margin: 10px;
+        padding: 10px 15px;
+    }
+
+    .imgHeadDiv {
+        padding: 3px 10px;
+    }
+
+    .imgHead {
+        height: 30px !important;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .hamburger:active{
+        transform: scale(1.05);
+        background-color: transparent;
+        transition-duration: 0.2s;
+    }
+
+    nav {
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: rgba(39, 215, 95, 0.9);
+        flex-direction: column;
+        width: 200px;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    nav.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .navsHref {
+        margin: 10px 0;
+        color: black;
+    }
+
+    #navsHrefBut {
+        width: 100%;
+    }
+
+    #headerImg{
+        width: 96%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .main-header {
+        margin: 5px;
+        padding: 8px 10px;
+    }
+
+    .navsHref {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        right: 10px;
+        width: 180px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    nav.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+main{
+    text-align:center;
+}
+#headerImg{
+    height: auto;
+}
+}
+
+.welcome{
+text-align: center; 
+margin-top: 50px; 
+border-radius: 9999px; 
+background-color: green;
+padding: 15px;
+margin-bottom: 30px;
+}
+.buttons1{
+/*justify-content: center;*/
+border-radius: 9999px;
+padding: 15px;
+height: fit-content;
+width: 240px;
+}
+#button1div{
+display: flex;
+justify-content: center;
+justify-content: flex;
+gap:40px;
+}
+.firstParagraphs{
+margin-top: 5px;
+    padding: 10px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align:justify;
+     
+}
+#headerImg{
+    margin-top: 50px;
+}
+h2{
+margin-top: 100px;
+font-weight: 100;
+}
+h1, h2 {
+    font-family: "Oswald", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+  font-size: 70px;
+  margin: 20px 0 20px 0 !important;
+  padding: 0 !important;
+}
+#button1{
+background-color: black;
+color: white;
+}
+
+.imgHead {
+    height: 30px !important;
+}
+
+section{
+    text-align: center;
+}
+
+/* Expandable content styles */
+.expandable-content {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1.6s ease-in-out, opacity 0.4s ease, padding 0.4s ease;
+    padding: 0 !important;
+    margin: -4px 24px 0 24px;
+    background-color: rgb(229, 231, 235);
+    transform-origin: bottom;
+    transform: translateY();
+}
+
+.expandable-content.active {
+    max-height: fit-content;
+    opacity: 1;
+    padding: 20px !important;
+    margin: -48px 0 0 0;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    transform: translateY();
+
+}
+
+.expandable-item {
+    position: relative;
+    z-index: 2;
+}
+
+main > * {
+  opacity: 0;
+  /* Use 3D transforms to force hardware acceleration */
+  transform: translate3d(0, 40px, 0) scale(0.98); 
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
+  
+  /* Hint to the browser that this will move */
+  will-change: transform, opacity; 
+  
+  /* Prevents accidental clicks while animating */
+  pointer-events: none; 
+}
+
+/* Active State */
+main > *.show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  pointer-events: auto;
+}
+
+/* Adjust initial state based on direction */
+main > *[data-scroll-dir="up"] {
+  transform: translate3d(0, -40px, 0) scale(0.98);
+}
+
+
+
+#home1 {
+  scroll-margin-top: 150px; /* Adjust this number to sit as far above as you like */
+}
+
+.cfont {
+  font-family: "Felipa", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#content {
+display: none;
+}
+
+ 
+
+
+/*main > * {
+  opacity: 0;
+  transform: translateY(60px) scale(0.98);
+  transition: 
+    opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+/* When visible /
+main > *.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}*/
