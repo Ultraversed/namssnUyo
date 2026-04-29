@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<!--contact dev.  +2349153133799--> 
+ 
+ 
+ 
+ 
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" /> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-  <link rel="stylesheet" type="text/css" href="../ultralimit/newNamssn.css">
+  <link rel="stylesheet" type="text/css" href="../Namssn/newNamssn.css">
   <link rel="stylesheet" type="text/css" href="newNamssnVanilla.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -298,13 +303,10 @@
         <img class="imgHead" src="namssn.png" alt="namssn logo" height="40" class="mx-9">
     </div>
 
-    <button class="hambuvrger" >
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
     <span class="material-symbols-outlined hamburger" id="hamburger">
-    menu
+  <span></span>
+  <span></span>
+  <span></span>
     </span>
 
     <span class="material-symbols-outlined closeIcon" id="closeIcon">
@@ -321,10 +323,11 @@
     </nav>
 </header>
 
-<main style="margin-top: 190px; text-align:center;">
+<main style="margin-top: 180px; text-align:center;">
     <section>
-        <span class="welcome">Welcome to NAMSSN, UniUyo!</span>
-<h1 style="text-align: center; font-size: 30px; line-height: 50px;">Excellence in Mathematical Science</h1>
+        <span class="welcome">Welcome to NAMSSN, UniUyo site!</span>
+<h1 style="text-align:center; font-size: 30px; line-height: 40px;">National association of mathematical science students of Nigeria(NAMSSN)</h1>
+ <h3 class="text-2xl"><i>Excellence in Mathematical Science</i></h3> 
 <p class="px-5 mx-5 firstParagraphs">We are a vibrant community of mathematicians and scholars dedicated to advancing mathematical knowledge and fostering intellectual growth. Our department partners with the student association to provide exceptional education, groundbreaking research, and meaningful mentorship for all our students.</p>
    <div class="px-3" id="button1div">
     <button id="button1" class="buttons1" href="https://www.facebook.com/share/1ZpHw2C8fw/" target="_blank">Join Our Community</button>
@@ -440,9 +443,11 @@
         </div>-->
 
     </div>
-<!--The media and developement team!-->
-<div id="content" class="p-5">
-<h2  class="text-[35px]! font-bold mb-5">The Tech Team</h2>
+<!--The developement team!-->
+
+<!--id="content"(add this id to the div below to make the tech team card only display when clicked!)-->
+<div class="p-5">
+<h2  class="text-[35px]! font-bold mb-5">The Team behind the build</h2>
 <div class="flex flex-wrap justify-center gap-3 text-lg">
     
     <!-- Card 1 -->
@@ -480,21 +485,11 @@
             <p class="text-justify">Focuses on sourcing and selecting relevant academic materials. Evaluates content and ensures only high-quality resources are considered for use.</p>
         </div>
     </div>
-
-    <!-- Card 5 (Developer) 
-    <div class="bg-gray-300 grow w-62 rounded-2xl p-2 flex flex-col">
-        <img src="ultra.jpg" alt="web developer" class="rounded-2xl object-cover h-95 w-full">
-        <div class="bg-white rounded-2xl mt-2 p-2 grow flex flex-col text-start">
-            <b class="text-xl">Comr. Kingsley John-holt</b><i>Developer</i><br>
-            <p class="mb-4">From initial architecture to final UI/UX, the end-to-end oversight ensures a scalable platform for students.</p>
-            <!-- mt-auto pushes the button to the very bottom 
-            <button class="w-fit mt-auto border-4 rounded-3xl bg-green-900 text-white p-2"> <a style="text-decoration: none;" href="https://wa.me/2349153133799">Contact on Whatsapp</a></button>
-        </div>
-    </div>-->
 </div>
 </div>
+<!--add this button after you add an id to the overall dive of this tech team above
 <button id="toggleBtn" class="mt-15 h-20 w-fit border-4 rounded-3xl bg-green-900 text-white p-2">Reveal the Team Behind the Build</button>
-
+-->
 </div>
 
 
@@ -685,15 +680,15 @@
 
 
                               <!--200level-->
-             <!-- Main Container (Keep this size same as your current card) -->
-             <div class="group h-96 w-62 p-2 download-card [perspective:1000px] cursor-pointer">
-               
-               <!-- Inner Card (The part that actually rotates) -->
-               <div class="relative h-full w-full rounded-2xl shadow-xl transition-all duration-700 [transform-style:preserve-3d] group-focus-within:[transform:rotateY(180deg)]">
-                 
-                 <!-- FRONT SIDE (Your Original Design) -->
-                 <div class="absolute inset-0 h-full w-full rounded-2xl overflow-hidden [backface-visibility:hidden]">
-                   <!-- YOUR ORIGINAL IMAGE -->
+              <!-- Main Container (Keep this size same as your current card) -->
+              <div class="group h-96 w-62 p-2 download-card [perspective:1000px] cursor-pointer">
+                
+                <!-- Inner Card (The part that actually rotates) -->
+                <div class="relative h-full w-full rounded-2xl shadow-xl transition-all duration-700 [transform-style:preserve-3d] group-focus-within:[transform:rotateY(180deg)]">
+                  
+                  <!-- FRONT SIDE (Your Original Design) -->
+                  <div class="absolute inset-0 h-full w-full rounded-2xl overflow-hidden [backface-visibility:hidden]">
+                    <!-- YOUR ORIGINAL IMAGE -->
                    <img src="level200.png" alt="200 Level" class="h-full w-full object-cover blur-[2px]">
                    
                    <!-- YOUR ORIGINAL OVERLAY/TEXT -->
@@ -720,23 +715,23 @@
                          <a href="materials/mth211(mathMethod1)2526.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center  p-3 rounded-lg hover:bg-white transition">
-                         <span class="text-sm font-medium">MTH212(Intro to Algebra)2025/2026</span>
+                         <span class="text-sm font-medium">MTH212(Intro to Algebra)2025/26</span>
                          <a href="materials/mth212(introAlgebra)2526.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
-                         <span class="text-sm font-medium">MTH213(Linear Algebra I)2025/2026</span>
+                         <span class="text-sm font-medium">MTH213(Linear Algebra I)2025/26</span>
                          <a href="materials/mth213(linAlg1)2526.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
-                         <span class="text-sm font-medium">MTH214(vector Analysis)2025/2026</span>
+                         <span class="text-sm font-medium">MTH214(vector Analysis)2025/26</span>
                          <a href="materials/mth214(vecAna)2526.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
-                         <span class="text-sm font-medium">MTH 216(scientific Computing)2025/2026</span>
+                         <span class="text-sm font-medium">MTH 216(scientific Computing)2025/26</span>
                          <a href="materials/mth216(sciComp)2526.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
-                         <span class="text-sm font-medium">MTH 211(math MethodsI Test)2025/2026</span>
+                         <span class="text-sm font-medium">MTH 211(math MethodsI Test)2025/26</span>
                          <a href="materials/mth211(mathMethodTest)2526.pdf" download class="text-xs bg-green-600 px-3 py-1.5 rounded-md font-bold uppercase tracking-wider">Download</a>
                        </li>
                        <li class="flex justify-between items-center p-3 rounded-lg hover:bg-white transition">
