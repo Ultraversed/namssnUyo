@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>protection pass</title>
+  <link href="" rel="stylesheet">
+  <style>
+    #inputBox {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      width: 50%;
+    }
+    label {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      font-weight:400;
+      font-family: Arial, sans-serif;
+    }
+    #submitButton {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease-out; 
+    }
+    #submitButton:active {
+      background-color: #45a049; 
+    transform: scale(0.9);
+  }
+
+  </style>
+</head>
+<body>
+  <form>
+  <label for="inputBox">This is a protected resource, please enter the secret code to access it:
+  </label>
+    <input type="password" id="inputBox" placeholder="Enter secret code">
+    <button type="submit" id="submitButton" onclick="passcheck(password)">Access</button>
+    </form>
+</body>
+<script>
+let password = document.getElementById('inputBox').value;
+function passcheck(x){
+if (x==="NAMSSNGINGER"){
+}
+else{
+  alert('Access Declined!, check Access Code');
+}
+}
+</script>
+</html>
